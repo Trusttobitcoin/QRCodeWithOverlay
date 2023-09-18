@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f7fb;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+#qrInput {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#qrOutput {
+    position: relative;
+    display: none;
+    margin: 20px auto;
+    width: 180px;
+    height: 180px;
+    line-height: 180px;
+}
+
+#qrOutput canvas {
+    vertical-align: middle;
+}
+
+#qrOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+#backButton {
+    display: none;
+    width: 180px;
+    margin: 20px auto;
+}
